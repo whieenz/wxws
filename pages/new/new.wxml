@@ -1,0 +1,29 @@
+<view class='scontainer'>
+  <view class='boxs' > 
+    <view class='create-iou-layout'>
+      <view class='iou-layout-item'>
+        <text class='key-text'>金额</text>
+        <input class='value-text'></input>
+      </view>
+      <view class='iou-layout-item'>
+        <text class='key-text'>还款日期</text>
+        <input class='value-text'></input>
+      </view>
+      <view class='iou-layout-item'>
+        <text class='key-text'>利息</text>
+        <input class='value-text'></input>
+      </view>
+      <view class='iou-layout-item'>
+        <text class='key-text'>理由</text>
+        <input class='value-text'></input>
+      </view>
+    </view>
+    <button class= 'submit-button' type='default'>提交</button>
+  </view> 
+  <view class='foot'  >
+    <navigator class="page-foot" openType="navigate" wx:for="{{bootMenu}}" wx:for-item="item" url="{{item.url}}">
+      <image style="display:block;width: 60rpx; height: 60rpx;" src="{{item.src}}" mode ='scaleToFill'></image>
+      <text class='boot_text' >{{item.text}}</text>
+    </navigator> 
+  </view>
+</view>
