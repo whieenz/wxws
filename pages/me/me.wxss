@@ -9,6 +9,7 @@ Page{
   background: gray;
   align-items: center;
   justify-content:space-between;
+  
 }
 .me-container {
   height: 88%;
